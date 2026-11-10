@@ -14,7 +14,7 @@
 #   scripts/repo-metadata.sh audit  [REPO]     # read-only; exits 1 on drift
 #   scripts/repo-metadata.sh apply  [REPO]     # needs admin on REPO
 #
-# REPO defaults to hyperpolymath/hotchocolabot; override with $REPO or $2.
+# REPO defaults to catachresis-colloquium/hotchocolabot; override with $REPO or $2.
 #
 # Every sibling repository in hyperpolymath/* can use this unchanged: point it at
 # its own .github/repository-topics.json via the META environment variable, or copy
@@ -25,7 +25,7 @@
 set -euo pipefail
 
 META="${META:-.github/repository-topics.json}"
-DEFAULT_REPO="${DEFAULT_REPO:-hyperpolymath/hotchocolabot}"
+DEFAULT_REPO="${DEFAULT_REPO:-catachresis-colloquium/hotchocolabot}"
 
 die() {
     echo "error: $*" >&2

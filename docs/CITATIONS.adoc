@@ -9,26 +9,26 @@
   author = {Polymath, Hyper},
   title = {hotchocolabot},
   year = {2025},
-  url = {https://github.com/hyperpolymath/hotchocolabot},
+  url = {https://github.com/catachresis-colloquium/hotchocolabot},
   license = {MPL-2.0}
 }
 ----
 
 == Harvard Style
 
-Polymath, H. (2025) _hotchocolabot_ [Computer software]. Available at: https://github.com/hyperpolymath/hotchocolabot
+Polymath, H. (2025) _hotchocolabot_ [Computer software]. Available at: https://github.com/catachresis-colloquium/hotchocolabot
 
 == OSCOLA
 
-Hyper Polymath, 'hotchocolabot' (2025) <https://github.com/hyperpolymath/hotchocolabot>
+Hyper Polymath, 'hotchocolabot' (2025) <https://github.com/catachresis-colloquium/hotchocolabot>
 
 == MLA
 
-Polymath, Hyper. "hotchocolabot." 2025, github.com/hyperpolymath/hotchocolabot.
+Polymath, Hyper. "hotchocolabot." 2025, github.com/catachresis-colloquium/hotchocolabot.
 
 == APA 7
 
-Polymath, H. (2025). _hotchocolabot_ [Computer software]. GitHub. https://github.com/hyperpolymath/hotchocolabot
+Polymath, H. (2025). _hotchocolabot_ [Computer software]. GitHub. https://github.com/catachresis-colloquium/hotchocolabot
 
 == See Also
 

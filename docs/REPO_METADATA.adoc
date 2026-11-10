@@ -6,13 +6,13 @@
 
 GitHub's *About* section (description + topics) is the only text GitHub indexes
 that is not inside the repository. It is what a stranger sees in search results,
-in `github.com/hyperpolymath/hotchocolabot/topics` listings, and in the
+in `github.com/catachresis-colloquium/hotchocolabot/topics` listings, and in the
 organization's own topic browse pages. Until now this repository had a full
 README and *no* description and *no* domain topics, which made it effectively
 invisible outside the estate while still being one of only a handful of its
 ~343 repositories without the `open-source` convention tag.
 
-Issue https://github.com/hyperpolymath/hotchocolabot/issues/12 records the
+Issue https://github.com/catachresis-colloquium/hotchocolabot/issues/12 records the
 missing description. The description and topic set below close it.
 
 The canonical values live in `.github/repository-topics.json` — *this document
@@ -198,7 +198,7 @@ refuses to run if the declaration is malformed. To do it by hand, without
 ----
 jq '{description: .description_text, topics: .topics}' \
   .github/repository-topics.json \
-  | gh api -X PATCH repos/hyperpolymath/hotchocolabot --input -
+  | gh api -X PATCH repos/catachresis-colloquium/hotchocolabot --input -
 ----
 
 The shorter `gh repo edit … --add-topic` form is *additive* — it is fine for

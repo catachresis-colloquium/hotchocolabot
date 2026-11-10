@@ -1,9 +1,9 @@
 {
   "description": "Discovery metadata for GitHub repository topics and bot-readable repository classification.",
 
-  "repository": "hyperpolymath/hotchocolabot",
+  "repository": "catachresis-colloquium/hotchocolabot",
   "rationale": "docs/REPO_METADATA.adoc",
-  "issue": "https://github.com/hyperpolymath/hotchocolabot/issues/12",
+  "issue": "https://github.com/catachresis-colloquium/hotchocolabot/issues/12",
 
   "description_text": "Educational robotics platform: an intentionally over-engineered hot chocolate dispenser, in Rust for Raspberry Pi, that teaches reverse engineering, systems thinking and safety-critical design to students aged 12–18 — with a mock-hardware HAL, a Certified Null Operations (CNO) safety state machine, and a full workshop curriculum.",
   "short_description": "Educational robotics: a deliberately over-engineered hot chocolate dispenser for teaching reverse engineering and systems thinking.",

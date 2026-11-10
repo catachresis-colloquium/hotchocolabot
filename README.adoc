@@ -12,7 +12,7 @@ Part of UAL Creative Communities' Postdisciplinary Mechatronics Group (MechCC)
 
 [NOTE]
 ====
-Canonical home for HotChocolaBot is this repo: `https://github.com/hyperpolymath/hotchocolabot`.
+Canonical home for HotChocolaBot is this repo: `https://github.com/catachresis-colloquium/hotchocolabot`.
 The old `gitbot-fleet` nested path is a mirror, not the source of truth.
 ====
 

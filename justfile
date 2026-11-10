@@ -356,9 +356,9 @@ repo-metadata:
 
 # Compare GitHub's live settings against the declared metadata (read-only; non-zero on drift)
 # Pass REPO= to audit a sibling repository in the estate instead
-repo-metadata-audit REPO="hyperpolymath/hotchocolabot":
+repo-metadata-audit REPO="catachresis-colloquium/hotchocolabot":
     @scripts/repo-metadata.sh audit "{{REPO}}"
 
 # Push the declared description and topics to GitHub (needs admin on the repository)
-repo-metadata-apply REPO="hyperpolymath/hotchocolabot":
+repo-metadata-apply REPO="catachresis-colloquium/hotchocolabot":
     @scripts/repo-metadata.sh apply "{{REPO}}"

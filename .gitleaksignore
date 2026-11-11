@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MPL-2.0
+#
+# gitleaks fingerprint ignores: commit:file:rule:line. Each line matches exactly
+# one historical occurrence and can never suppress a new finding. No rule is
+# disabled and no path or value is allowlisted.
+#
+# All eight are reviewed false positives in files that no longer exist on main
+# (the bots/ tree), so only the history pass sees them:
+#   - cipherbot/src/analyzers/config.rs:150,177  `sk-1234567890abcdef`, the
+#     sequential-digit input to the secret detector's own unit tests.
+#   - seambot/tests/github_integration.rs:154    `ghs_` + 36 x 'x', a placeholder
+#     in a token-parsing test.
+#   - sustainabot/docs/GITHUB_APP_SETUP.md:89    a PEM header and footer around a
+#     literal `...`; no key material.
+# A value allowlist was rejected: gitleaks 8.18.4 captures only `ghs` as the
+# github-app-token secret, so `^ghs$` would blind that rule for every real token.
+37db42f48f7f85f2558a57e3f6643a62f39da2bc:bots/cipherbot/src/analyzers/config.rs:generic-api-key:150
+37db42f48f7f85f2558a57e3f6643a62f39da2bc:bots/cipherbot/src/analyzers/config.rs:generic-api-key:177
+37db42f48f7f85f2558a57e3f6643a62f39da2bc:bots/seambot/tests/github_integration.rs:github-app-token:154
+37db42f48f7f85f2558a57e3f6643a62f39da2bc:bots/sustainabot/docs/GITHUB_APP_SETUP.md:private-key:89
+f1b3dc853aa9c13e47fde308681c4a1e0bb58eb1:bots/cipherbot/src/analyzers/config.rs:generic-api-key:150
+f1b3dc853aa9c13e47fde308681c4a1e0bb58eb1:bots/cipherbot/src/analyzers/config.rs:generic-api-key:177
+f1b3dc853aa9c13e47fde308681c4a1e0bb58eb1:bots/seambot/tests/github_integration.rs:github-app-token:154
+f1b3dc853aa9c13e47fde308681c4a1e0bb58eb1:bots/sustainabot/docs/GITHUB_APP_SETUP.md:private-key:89
